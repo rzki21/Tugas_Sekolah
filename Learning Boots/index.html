@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar & Menu Bar</title>
+    <!--Syarat untuk menggunakan Bootstrap-->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+        .jarak {
+            padding: 100px 0;
+        }
+        #beranda {
+            background-color: #f8f9fa;
+        }
+        #jadwal {
+            background-color: #e9ecef;
+        }
+        #harga {
+            background-color: #dee2e6;
+        }
+        #tentang {
+            background-color: #ced4da;
+        }
+        footer {
+            background-color: #495057;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-info sticky-top" data-bs-theme="dark">
+    <div class="container">
+        <a class="navbar-brand mx-1" style="color: white;" href="#beranda">
+            <img style="border-radius: 9px;" src="ocean-wave-logo-vector-sea-waves-logo-waves-logo-vector-template_148524-899.avif" width="30px">
+            Nusantara Gate
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu_bar" aria-controls="menu_bar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu_bar">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-item nav-link active mx-2" href="#beranda">Beranda</a>
+                <a class="nav-item nav-link mx-2" href="#jadwal">Jadwal</a>
+                <a class="nav-item nav-link mx-2" href="#harga">Harga</a>
+                <a class="nav-item nav-link mx-2" href="#tentang">Tentang</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Beranda -->
+<div id="beranda" class="section py-5" style="background: #f9f9f9;">
+    <div class="container text-center">
+        <h2 class="mb-3">Mengenal Nusantara Gate</h2>
+        <p class="lead text-muted">Layanan Kapal Yang Kami Sediakan Untuk Anda</p>
+        <img style="border-radius: 8px; margin-bottom: 20px;" 
+             src="istockphoto-864510358-612x612.jpg" 
+             class="img-fluid" 
+             alt="Nusantara Gate Image">
+        <p>Kapal Laut yang dinahkodai oleh Laksamana Budiono Siregar menyediakan layanan pelayaran menuju ke tempat yang kalian inginkan.</p>
+        <p>Nikmati segera layanan yang kami berikan untuk Anda. Rasakan perbedaan layanan yang kami tawarkan!</p>
+    </div>
+</div>
+
+
+<!-- Jadwal -->
+<div id="jadwal" class="jarak">
+    <div class="container">
+        <h2 class="text-center mb-4">Jadwal Pelayaran</h2>
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Rute</th>
+                    <th>Keberangkatan</th>
+                    <th>Durasi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jakarta - Surabaya</td>
+                    <td>08:00 WIB</td>
+                    <td>12 Jam</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Surabaya - Bali</td>
+                    <td>14:00 WIB</td>
+                    <td>10 Jam</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Surabaya - Amsterdam</td>
+                    <td>15:00 WIB</td>
+                    <td>20 Jam</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Tulungagung - Melbourne</td>
+                    <td>07:00 WIB</td>
+                    <td>24 Jam</td>
+                </tr>
+               
+            </tbody>
+            <p style="text-align: center;">Diskon 50% di Tahun 2025!</p>
+        </table>
+        <!-- Untuk Iklan -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Bedugul.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Paket Wisata Pulau</h5>
+                    <p class="card-text">Jelajahi keindahan nusantara dengan harga spesial.</p>
+                    <a href="#harga" class="btn btn-warning">Lihat Harga!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Harga -->
+<div id="harga" class="jarak">
+    <div class="container">
+        <h2 class="text-center mb-4">Harga Tiket</h2>
+        <p class="text-center">Harga Untuk Semua Kelas, Layanan Sama!</p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Jakarta - Surabaya: Rp500.000</li>
+            <li class="list-group-item">Surabaya - Bali: Rp400.000</li>
+            <li class="list-group-item">Paket Wisata Pulau: Rp1.000.000</li>
+            <li class="list-group-item">Surabaya - Amsterdam: Rp15.000.000</li>
+            <li class="list-group-item">Tulungagung - Melbourne: Rp10.000.000</li>
+            <li class="list-group-item">Tulungagung - Papua: Rp5.000.000</li>
+            <li class="list-group-item">Aceh - Pulau Nias: Rp3.000.000</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Tentang -->
+<div id="tentang" class="jarak">
+    <div class="container">
+        <h2 class="text-center mb-4">Tentang Nusantara Gate</h2>
+        <p class="text-center">Nusantara Gate adalah penyedia layanan pelayaran terbaik di Indonesia, dengan komitmen pada kenyamanan dan keamanan penumpang. Kami menghadirkan pengalaman pelayaran yang menyenangkan dengan fasilitas terbaik.</p>
+        <p class="text-center">Nusantara Gate Juga Memberikan Pengalaman Yang Tak Biasa, Kami Menyediakan Pengalaman Yang Tak Akan Terlupakan Dalam Hidup Anda!</p>
+        <div class="text-center">
+            <img style="border-radius: 5px;" class="rounded" src="images.jpeg" alt="Kapal Nusantara" width="30%">
+            <img style="border-radius: 5px;" class="rounded" src="header-seabourn-cruises-LUXECRUISE0122-dbc591aa50da4c1382b6aead9ec0db86.jpg" alt="Kapal Nusantara" width="30%">
+            <img style="border-radius: 5px;" class="rounded" src="berikut-ini-jadwal-keberangkatan-kapal-ferry-exspres-dari-de-ygrt.jpg" alt="Kapal Nusantara" width="30%">
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+    <div class="rounded">
+        <p>© 2024 Nusantara Gate. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+<!--Tugas Muhammad Rizki-->
