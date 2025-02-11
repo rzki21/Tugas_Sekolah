@@ -1,2 +1,2 @@
 # Tugas_Sekolah
-Buat ngumpulin tugas selama di sekolah
+Pengumpulan Tugas Mata Pelajaran Web Programming (Pilihan)
